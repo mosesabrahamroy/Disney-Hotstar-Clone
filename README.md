@@ -1,66 +1,49 @@
-Disney+ Hotstar Clone
-Welcome to the Disney+ Hotstar Clone project repository! This project aims to replicate the core features and user experience of Disney+ Hotstar, offering a platform for streaming a wide variety of movies, TV shows, live sports, and exclusive content.
+# Book Finder 2.0
 
+**Book Finder 2.0** is a simple web application that allows users to search for books using the Google Books API. This project was originally [a school assignment](https://livoszlak.github.io/book-finder-api/) I worked on during my first year of web development studies, when I was just starting to learn about APIs, but I thought it would be fun to refactor what I had into utilizing a framework and some nicer styling. The previous version was basically one vanilla JS script file, one vanilla CSS file and one HTML index file. This 2.0 version is built with React and Vite.
 
-Demo Video
-Watch the demonstration video to see the project in action.
+## Dependencies
 
-Features
-Content Streaming: Stream a vast library of movies, TV series, live sports events, and exclusive content.
-Search & Recommendations: Effortlessly discover new content using a powerful search engine and personalized recommendations.
-Responsive Design: The platform is fully responsive, offering an optimal viewing experience across desktops, tablets, and mobile devices.
-Technologies Used
-Frontend: React, HTML, CSS, JavaScript
-API Integration: TMDB (The Movie Database) API for movie and TV show data
-Styling: Material UI for UI components and responsiveness
-State Management: React hooks and Context API (if needed)
-Routing: React Router for navigation
-Getting Started
-To get started with the Disney+ Hotstar Clone on your local machine, follow the steps below:
+- React: ^18.3.1
+- React DOM: ^18.3.1
+- @emotion/react: ^11.13.3
+- @emotion/styled: ^11.13.0
+- @mui/material: ^6.1.1
+- @mui/icons-material: ^6.1.1
+- Vite: ^5.4.1
 
-1. Clone the Repository
-Clone this repository to your local machine:
+## Installation
 
-git clone https://github.com/your-username/disney-plus-hotstar-clone.git
-cd disney-plus-hotstar-clone
-2. Install Dependencies
-Make sure you have Node.js and npm installed. Then, install the project dependencies:
+1. Clone the repository:
 
-npm install
-3. Set up the TMDB API Key
-To fetch movie and TV show data, you'll need a TMDB API key. Follow these steps to get one:
+   ```sh
+   git clone https://github.com/livoszlak/book-finder-api-2.0.git
+   cd bookfinder
+   ```
 
-Go to TMDB API and sign up for an account to obtain an API key.
-Once you have your API key, create a .env file in the root of your project and add the following line:
+2. Install the dependencies:
 
-REACT_APP_TMDB_API_KEY=your_api_key_here
-4. Start the Application
-Run the application locally:
+   ```sh
+   npm install
+   ```
 
-npm start
-This will launch the app at http://localhost:3000. You can now explore the streaming platform!
+3. Get your own Google Books API key from [Google Cloud Console](https://console.cloud.google.com/).
 
-Features to Implement
-Here are some future improvements you can work on:
+4. Create a `.env` file in the root of the project and add your API key:
 
-User Authentication: Implement user login and signup features using Firebase or another authentication service.
-Watchlist: Add the ability for users to create and manage their watchlists.
-Movie/Show Details: Show detailed pages for movies and TV shows, including trailers, reviews, and cast information.
-Search Filters: Enhance the search functionality with filters (genre, release year, etc.).
-Contributing
-Contributions are welcome! Whether you want to:
+   ```env
+   VITE_GOOGLE_BOOKS_API_KEY=your_api_key_here
+   ```
 
-Improve the user interface.
-Add new features or functionality.
-Fix bugs or improve performance.
-Please fork this repository, make your changes, and submit a pull request. You can also open an issue if you encounter any bugs or have ideas for new features.
+5. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## Contributing
 
-Usage
-Feel free to explore the Disney+ Hotstar Clone and use it for your personal entertainment needs. You can also customize the project to match your specific requirements or extend its functionality.
+Contributions are welcome! Please see the [Contributing Guide](CONTRIBUTING.md) for more details.
 
-Contact
-If you have any questions, suggestions, or feedback, don't hesitate to reach out to me via [your contact info or email].
+## License
 
+This project is licensed under the MIT License.
