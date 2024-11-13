@@ -1,0 +1,181 @@
+/* Global styles */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Component-specific styles */
+.movie-card {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  background: #000000;
+}
+
+.movie-poster {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.movie-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.movie-card:hover .movie-poster {
+  transform: scale(1.05);
+}
+
+.movie-card:hover .movie-details {
+  opacity: 100;
+}
+
+.movie-title,
+.movie-description,
+.watch-now-btn {
+  padding: 5px;
+}
+
+.movie-title {
+  font-weight: bold;
+}
+
+.watch-now-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.watch-now-btn:hover {
+  background-color: #c0392b;
+}
+
+.wrapperBox {
+  padding-top: 10%;
+  background-color: #000000;
+  padding-bottom: 10%;
+}
+
+.wrapperBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Global styles */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Component-specific styles */
+.movie-card {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  background: #000000;
+  border-radius: 10px; /* Add border radius for a card-like effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for more depth */
+  transition: transform 0.3s ease;
+}
+
+.movie-poster {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.movie-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transform transition for card elevation */
+}
+
+.movie-card:hover {
+  transform: translateY(-5px); /* Add a slight elevation effect */
+}
+
+.movie-card:hover .movie-poster {
+  transform: scale(1.05);
+}
+
+.movie-card:hover .movie-details {
+  opacity: 1;
+  transform: translateY(-5px); /* Match the card elevation */
+}
+
+/* Global styles */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Component-specific styles */
+.movie-card {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  background: #000000;
+  border-radius: 10px; /* Add border radius for a card-like effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for more depth */
+  transition: transform 0.3s ease;
+}
+
+.movie-poster {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.movie-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transform transition for card elevation */
+}
+
+.movie-card:hover {
+  transform: translateY(-5px); /* Add a slight elevation effect */
+}
+
+.movie-card:hover .movie-poster {
+  transform: scale(1.05);
+}
+
+.movie-card:hover .movie-details {
+  opacity: 1;
+  transform: translateY(-5px); /* Match the card elevation */
+}

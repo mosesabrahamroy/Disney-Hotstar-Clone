@@ -1,0 +1,17 @@
+.trailer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 0 20px;
+    background-color: #000; 
+  }
+  
+  .trailer-video {
+    width: 100%;
+    max-width: 2000px;
+    height: calc(100vw * 9 / 16);
+    max-height: 540px; 
+    border: none;
+  }
+  
